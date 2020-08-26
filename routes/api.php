@@ -27,3 +27,9 @@ Route::group(['prefix' => 'auth'], function () {
         Route::get('user', 'AuthController@user');
     });
 });
+
+Route::group(['middleware' => 'auth:api'], function() {
+    Route::resource('tareas', 'API\TareaController')->except([
+        'create', 'edit'
+    ]);
+});

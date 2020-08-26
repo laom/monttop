@@ -23,9 +23,15 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
+Vue.component('crud-component', require('./components/CRUDComponent.vue').default);
+
+Vue.component('mis-tareas-component', require('./components/MisTareasComponent.vue').default);
+Vue.component('form-tarea-component', require('./components/FormTareaComponent.vue').default);
+Vue.component('tarea-component', require('./components/TareaComponent.vue').default);
+
 import Vuetify from 'vuetify'
 Vue.use(Vuetify);
 const app = new Vue({
-    el: '#appp',
+    el: '#app',
     vuetify: new Vuetify(),
 });

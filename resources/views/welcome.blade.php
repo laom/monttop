@@ -14,7 +14,7 @@
 
     </head>
     <body>
-        <div id="appp">
+        <div id="app">
             <example-component></example-component>
         </div>
         <script src="{{ asset('js/app.js') }}" defer></script>
